@@ -1,0 +1,30 @@
+body{
+    font-family:'Playfair Display' sans-serif;
+    background-image:linear-gradient(black,gray );
+}
+/* headers*/
+h1{
+    font-size: 2em;
+        color: cyan;
+        text-decoration: underline;
+        text-align: center;
+}
+/* Resume headers*/
+h2{
+    font-size: 1em;
+        color:lightblue;            
+        text-decoration: underline;
+}
+/* Header and footer*/
+h3{
+    font-size: 1em;
+        color: whitesmoke;
+        text-decoration: center;
+}    
+
+/* Sections of Resume*/
+section{
+    border: 3px dotted rgb(123, 52, 190);
+}
+
+
