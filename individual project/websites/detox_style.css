@@ -1,0 +1,42 @@
+body{
+    color: chartreuse;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row {display: flex; margin: 2em 0em}
+.col {flex: 1; margin: 0 .75em;}
+.page-container{ margin: 5em 2em 0em 2em;}  /* to adjust for nav header*/ 
+footer{margin: 2em; text-align: center; font-size: 18.5 px;}
+
+/* Makes sure the videoes have enough room when responsive*/
+iframe{
+    width: 100%;
+    height: 30em;
+}
+
+/* To make sure links always stay green */
+a:link, a:visited{
+    color: chartreuse;
+}
+
+/* CSS for Progressive Bar */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: black;
+    }
+.header h2{
+text-align: center;
+}
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    }
+.progress-bar {
+    height: 8px;
+    background: chartreuse;
+    width: 0%;
+    }
