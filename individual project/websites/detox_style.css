@@ -1,12 +1,15 @@
 body{
-    color: chartreuse;
+    color: gray;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
-.row {display: flex; margin: 2em 0em}
-.col {flex: 1; margin: 0 .75em;}
+h2, h3, h4, h5{
+    color: chartreuse
+}
+.row {display: flex;}
+.col {flex: 1;}
 .page-container{ margin: 5em 2em 0em 2em;}  /* to adjust for nav header*/ 
-footer{margin: 2em; text-align: center; font-size: 18.5 px;}
+footer{margin: 2em; text-align: center; font-size: 18.5px;}
 
 /* Makes sure the videoes have enough room when responsive*/
 iframe{
@@ -15,7 +18,10 @@ iframe{
 }
 
 /* To make sure links always stay green */
-a:link, a:visited{
+a:visited, a:link{
+    color: gray;
+}
+a:hover{
     color: chartreuse;
 }
 
