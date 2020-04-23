@@ -15,47 +15,102 @@
         
         <title> Detox Competition </title>
         <style>
-            img{
-                width: 100%;
-                height: 70%;
-            }
 
             @media screen and (max-width: 1100px){
                 .row{
                     flex-direction: column;
                 }
+            }
+            h2, h3, h4, h5{
+                color: chartreuse;
+            }
 
+            .div .li{
+                background-color: black;
+            }
+            figure{
+                background: transparent;
+            }
+            #img_cod{
+                background: url(Media/game_photos/CoD.jpg);
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 8em;
+            }
+            #img_ow{
+                background: url(Media/game_photos/ow_background.jpg);
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 8em;
+            }
+            #img_melee{
+                background: url(Media/game_photos/melee_background.jpg);
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 8em;
+            }
+            #img_fortnite{
+                background: url(Media/game_photos/fortnite.png);
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 8em;
+            }
+            .container{
+                margin-top: 6em;
             }
         </style>
     </head>
 
     <body>
+             
         <div class="header">
-            <h2>Detox Competition Guidelines: &nbsp;&nbsp;&nbsp; <a href="">Home Page</a> &nbsp;&nbsp;&nbsp;<a href="">Competition</a> &nbsp;&nbsp;&nbsp; <a href="">Mission Statement</a></h2>
-    
-                <!-- Progressive bar in header-->
-                <div class="progress-container">
-                    <div class="progress-bar" id="myBar"></div>
-                        <nav>  <!-- 1st section --></nav>
-                  
-                </div>
+            <!-- Progressive bar in header-->   
+            <div class="progress-container" style="height: 2px;">
+                <div class="progress-bar" id="myBar" style="height: 2px;"></div>
+                <nav></nav>
+            </div>
+
+            <div class="bs-example">
+                <ul class="nav nav-pills mb-5">
+                    <li class="nav-item">
+                        <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html" class="nav-link active">Detox Competition Guidelines</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Directory</a>
+                        <div class="dropdown-menu">
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html" class="dropdown-item">Home Page</a>
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html" class="dropdown-item">Competition Guildelines</a>
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html" class="dropdown-item">Mission Statement</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="https://jlancast6.wixsite.com/detoxleague"class="dropdown-item">Detox Company</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class = "page-container"> 
-             <!-- Header and Nav will be on every page -->
-            <header>
-                <h1> Detox League: Competition Guidelines</h1> <!-- Page's top "Detox League Sign -->
-            </header>
-            
-            <!-- Will have 3 sections
-            1. Nav bar (above)
-            2. Divisonal levels (Age backet, Grade, game type)
-            3. Game guidelines (add as many sections as games (x6))
-            -->
+        <div class = "container"> 
 
             <main>
-                <h2>Division Seperation</h2>
-                <!-- 2nd Section -->
+                
+
+                <!-- Guildelines per game explicitly-->
+                <!-- Each section will have 4 compenents:
+                1. image 
+                2. list of rules
+                3. video game play 
+                4. Additional requirements or guidelines-->
+                
+                <h2> Detox Competition Guildelines</h2>
+                <br>
                 
                 <section class = 'row'>     
                     <div class = 'col'> <!-- Game division-->
@@ -85,15 +140,6 @@
                     </div>
                 </section>
 
-                <!-- Guildelines per game explicitly-->
-                <!-- Each section will have 4 compenents:
-                1. image 
-                2. list of rules
-                3. video game play 
-                4. Additional requirements or guidelines-->
-                
-                <h2> Detox Competition Guildelines</h2>
-                <br>
                 <h3>Player Eligibility: </h3>                  
                 <p> Competitors will be using Detox’s equipement when competing at desired venue location. Players are required to bring their own standard controller to compete in the tournament. <u>MOD CONTROLS ARE NOT ALLOWED</u>. There will be screenings before the entry of the tournament to check the validity of the player's controller.</p>
 
@@ -105,11 +151,9 @@
                 <h3> Game Guidelines:</h3>
 
                 <section class = 'row'>
+
                     <section class= 'col'>
-                        <h3>Call of Duty</h3>  <img src= "Media/game_photos/CoD.jpg" alt= "Call of Duty Image"/>
-                    </section>
-                    <section class= 'col'>
-                        <h5>Description:</h5>
+                        <h5>Call Of Duty:</h5>
                         <p>Call of Duty is a multiplayer shooter game. Detox will play in competition game modes (Search in Destory, Hardpoint, Domination). These compeitions will be complied of 2 teams of 6 competeting best 2 our of 3. </p>
                         <h5>Note:</h5>
                         <ol>
@@ -128,32 +172,19 @@
                     </section>
                 </section>
 
-                <section class = 'row'>
-                    <section class= 'col'>
-                        <h3>Guidelines: Counter-strike: Global Offense</h3>  
-                        <img src= "Media/game_photos/CSGO.jpg" alt= "Counter-Strike: Global Offensive Image"/>
-                    </section>
-                    <section class= 'col'>
-                        <h5>Description:</h5>
-                        <p>Unlike casual mode, competitive mode always pits two teams of 5 against each other in a 30 round match. The roundtime is 1 minute 55 seconds and the bomb timer is 40 seconds. It is not possible to switch sides during the game except at the halftime. After the first 15 rounds, the game reaches halftime and the two teams will switch sides. The first team to score 16 points wins the game. If both teams score a total of 15 points by the end of the 30th round, the match will end in a tie. Games can also end prematurely if one team surrenders to the other. A vote to surrender must be unanimously agreed upon, and the vote is locked until a team member abandons the match.</p>
-                        <h5>Note:</h5>
-                        <ol>
-                            <li> Detox will provide equipement to compete on.</li>
-                            <li> Players can bring their own mouse if they choose to.</li> 
-                        </ol>
-                    </section>
-                    <section class= 'col'>
-                        <h4>Video: N/A</h4>
-                    </section>
-                </section>
+
+                <!-- These figures are for the background images that are fixed throughout the page-->
+                <figure class = 'container-fluid' id='img_cod'>
+                    <div class = 'row jumbo text-center'> 
+                        <div class = 'col-12'>
+                            <p class = lead></p>
+                        </div>
+                    </div>
+                </figure>                
 
                 <section class = 'row'>
                     <section class= 'col'>
-                        <h3>Overwatch</h3> <!-- Overwatch -->
-                        <img src= "Media/game_photos/Overwatch.svg" alt= "Overwatch Image"/>
-                    </section>
-                    <section class= 'col'>
-                        <h5>Description:</h5>
+                        <h5>Ovewatch:</h5> <!-- Overwatch-->
                         <p>Overwatch is two teams of six battle to either capture or defend the objective. There are a total of 2 game modes with a mix of both. Push the </p>
                         <h5>Note:</h5>
                         <ol>
@@ -168,13 +199,18 @@
                     </section>
                 </section>
 
+                <!-- Fixed Background -->
+                <figure class = 'container-fluid padding' id='img_ow'>
+                    <div class = 'row jumbo text-center'> 
+                        <div class = 'col-12'>
+                            <p class = lead></p>
+                        </div>
+                    </div>
+                </figure>
+
                 <section class = 'row'>
                     <section class = 'col'>
-                        <h3>Super Smash Brothers Brawl: Melee</h3> <!-- SSBM -->
-                        <img src= "Media/game_photos/Melee.png" alt= "Super Smash Brothers Brawl: Melee Image"/>
-                    </section>
-                    <section class = 'col'>
-                        <h5>Description:</h5>
+                        <h5>Super Smash Brothers Brawl: Melee:</h5><!-- SSBM -->
                         <p>We will play SSBB: Melee, Project M, and Ultimate. We host brackets of singles and dous. Oppenents will need to Rock-Paper-Sissors for inital choice of map. At the end of each match, the defeated player can blcok 2 maps before the winner choose the next map.  </p>
                         <h5>Note:</h5>
                         <ol>
@@ -189,13 +225,19 @@
                     </section>
                 </section>
                 
+                <!--Fixed Background-->
+                <figure class = 'container-fluid padding' id='img_melee'>
+                    <div class = 'row jumbo text-center'> 
+                        <div class = 'col-12'>
+                            <p class = lead></p>
+                        </div>
+                    </div>
+                </figure>
+
+
                 <section class ='row'>
-                    <section class = 'col'>
-                        <h3>Fortnite</h3> <!-- fortnite -->
-                        <img src= "Media/game_photos/fortnite.png" alt= "Fortnite: Battle Royal"/>
-                    </section>
                     <section class= "col">
-                        <h5>Description:</h5>
+                        <h5>Fortnite:</h5><!-- fortnite -->
                         <p>Detox host singles and dous for this battle royal game. we will stick with the standard map and at high request will change the map to old verzions if possible.</p>
                         <h5>Note:</h5>
                         <ol>
@@ -208,12 +250,25 @@
                         <h4>Video:</h4>
                         <iframe width="560" height="315" class= "video" src="https://www.youtube.com/embed/GLnSSQsRYuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </section>
-                    
                 </section>
 
+                <figure class = 'container-fluid padding' id='img_fortnite'>
+                    <div class = 'row jumbo text-center'> 
+                        <div class = 'col-12'>
+                            <p class = lead></p>
+                        </div>
+                    </div>
+                </figure>
+
+                <!-- Bootstrap dropdown Script-->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+                <!-- Progress Bar Script-->
                 <script>
                     window.onscroll = function() {myFunction()};
-                    
                     function myFunction() {
                         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
                         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -222,10 +277,8 @@
                     }
                 </script>
             </main>
-        </div> <!-- /page-container -->
-       
-       
-        <footer>
+
+            <foot>
                 <div class = "row">
                     <div class ="col">
                         <h3> <u>Contact us:</u> </h3>
@@ -239,7 +292,9 @@
                         <a href="">Home Page</a> &nbsp;&nbsp;&nbsp;<a href="">Competition</a> &nbsp;&nbsp;&nbsp; <a href="">Mission Statement</a>
                     </div>
                 </div>
-            </footer>
+            </foot>
+
+        </div> <!-- /page-container -->
     </body>
 
     
