@@ -11,119 +11,168 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Style CSS-->
         <link rel='stylesheet' type="text/css" href="detox_style.css">
-       
+       <!-- Font Link-->
+       <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
         
         <title> Detox Home </title>
         <style>
-        .row .col{
-            text-align: center;
-            border: 2px solid lightgray;
-        }
-        .game_case{
-            margin: 3em 5em;
-        }
-        .game_case img{
-            width: 50%; height: 65%;
-        }
-        @media screen and (max-width: 575px) {
-            .row, .mynavbar {   
-                flex-direction: column;
+
+            /* This is CSS for the over color that comes from hovering over the image. Can't get it to work yet. */
+            .img_container {
+            position: relative;
+            width: 50%;
             }
-            .mynavbar{
-                text-align: center;
-            }
-            .page-container{margin-top: 10em;}
             
-            /* CSS for Calandar */
-            .display-4 {
-                font-size: 1.5rem;
+            .img-fluid{margin-top: 1em; margin-bottom: 1em;}
+            
+            .image {
+            display: block;
+            width: auto;
+            height: auto;
+            border: 2px solid white;
             }
-            .day h5 {
-                background-color: black;
-                padding: 3px 5px 5px;
-                margin: -8px -8px 8px -8px;
+
+            .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+            border: 2px solid purple;
             }
-            .date {
-                padding-left: 4px;
+
+            #shadow:hover .overlay {
+            opacity: 1;
             }
-        }
+
+            .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+
         /* CSS for Calandar */
         @media (min-width: 576px) {
             .day {
                 height: 14.2857vw;
             }
         }
+
+        
+
         </style>
     </head>
 
     <body>
         <div class="header">
-            <h2>Detox Competition Guidelines: &nbsp;&nbsp;&nbsp; <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html">Home Page</a> &nbsp;&nbsp;&nbsp;<a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html">Competition</a> &nbsp;&nbsp;&nbsp; <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html">Mission Statement</a></h2>
-    
-                <!-- Progressive bar in header-->
-                <div class="progress-container">
-                    <div class="progress-bar" id="myBar"></div>
-                        <nav>  <!-- 1st section --></nav>
-                  
-                </div>
+            <!-- Main Nav Bar-->
+            <div id ='nav1'>
+                <h1>Detox League: &nbsp;&nbsp;&nbsp;<a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html">Home</a> &nbsp;&nbsp;&nbsp;<a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html">Competition</a> &nbsp;&nbsp;&nbsp; <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html">Mission Statement</a></h1>
+            </div>
+
+            <!-- Mobile nav Bar-->
+            <div class="bs-example" id="nav2">
+                <ul class="nav nav-pills mb-5">
+                    <li class="nav-item">
+                        <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html" class="nav-link active">Home Page</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Directory</a>
+                        <div class="dropdown-menu">
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html" class="dropdown-item">Home Page</a>
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html" class="dropdown-item">Competition Guildelines</a>
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html" class="dropdown-item">Mission Statement</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="https://jlancast6.wixsite.com/detoxleague"class="dropdown-item">Detox Company</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Progressive bar in header-->   
+            <div class="progress-container" style="height: 2px;">
+                <div class="progress-bar" id="myBar" style="height: 2px;"></div>
+                <nav></nav>
+            </div>
         </div>
 
-        <div class = "container">
+        <div class = "container" >
             
             <!-- Will have 3 sections
             1. Nav bar (above)
             2. Display of games in competitions
             3. Calander and upcoming events list
             -->
-            
-                <section> <!-- 2nd section -->
-                    <h2> Game Competition </h2>
+
+
+                <section > <!-- 2nd section -->
+                    <h2> Game Page </h2>
+                    <div class="container-fluid" >
+                                
+                        <div class="row" > 
+
+                            <!-- For some reason I cant get this to only cover the length and width of an Image.
+                            I've tried doing to only images or the speicific col for bootstrap but I feel as though something is covering it.-->
+                            <div id='shadow'>
+                                <div class='overlay'><div class='text'> COD 2</div></div>
+                            </div>  
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6" >
+                             
+
+<!-- This formate allows the containers to hover over the images with names    
+
+<div class="img_container">
+    <img src="Media/game_photos/CoD.jpg" class="img-fluid" alt="Avatar">
+    <div class="overlay">
+        <div class="text">Call of Duty</div>
+    </div>
+</div> 
+-->                     
+                                <img src="Media/game_photos/CoD.jpg" class="img-fluid" >
+                                
+                                
+                                
+                                
+                                <img src="Media/game_photos/melee_pic.jpg"  class="img-fluid" >
+                                <img src="Media/game_photos/NFL_Madden.png"  class="img-fluid">
+                                <img src="Media/game_photos/COD_ghost.jpg" class="img-fluid">
+                                <img src="Media/game_photos/SSBB-ultimate.jpg"  class="img-fluid">
+                                <img src="Media/game_photos/COD_img.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img src="Media/game_photos/PUBG.jpg" class="img-fluid">
+                                <img src="Media/game_photos/MK_logo.png" class="img-fluid">
+                                <img src="Media/game_photos/LoL.jpg"  class="img-fluid">
+                                <img src="Media/game_photos/FIFA.svg" class="img-fluid">
+                                <img src="Media/game_photos/Overwatch.svg"  class="img-fluid">
+                            </div>  
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img src="Media/game_photos/Melee.png"  class="img-fluid">
+                                <img src="Media/game_photos/Mortal_Kombat.png"  class="img-fluid">
+                                <img src="Media/game_photos/CSGO.jpg"  class="img-fluid">
+                                <img src="Media/game_photos/2k.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- List of games in seperate divs 2x3-->
-                    <div class = 'game_case'>                       
-                        <section class='row'> <!--Game top 1,2,3 -->
-                            <div class = 'col'> <!-- COD -->
-                                <img src= "Media/game_photos/CoD.jpg" alt= "Call of Duty Image"/>
-                                <p> Call of Duty </p>
-                            </div>
-
-                            <div class = 'col'><!-- LoL -->
-                                <img src= "Media/game_photos/LoL.jpg" alt= "League of Legends Image"/>
-                                <p> League of Legends </p>
-                            </div>
-
-                            <div class = 'col'><!-- CSGO -->
-                                <img src= "Media/game_photos/CSGO.jpg" alt= "Counter-Strike: Global Offensive Image"/>
-                                <p> Counter-Strike: Global Offensive </p>
-                            </div>
-
-                        </section>
-
-                        <section class='row'> <!--Game bottom 1,2,3 -->
-
-                            <div class = 'col'> <!-- Overwatch -->
-                                <img src= "Media/game_photos/Overwatch.svg" alt= "Overwatch Image"/>
-                                <p> Overwatch </p>
-                            </div>
-
-                            <div class = 'col'><!-- SSBB -->
-                                <img src= "Media/game_photos/Melee.png" alt= "Super Smash Brothers Brawl: Melee Image" />
-                                <p> SSBB: Melee </p>
-                            </div>
-
-                            <div class = 'col'><!-- 2K -->
-                                <img src= "Media/game_photos/2k.png" alt= "NBA: 2k Image"/>
-                                <p> NBA: 2K </p>
-                            </div>
-                        </section> 
-
-                    </div><!-- /game_case -->
                 </section>
                 
-                <h2>Upcoming Dates!</h2>
                     <div class = 'col'> <!-- Calander-->
                         <div class="container-fluid">
                             <header>
-                                <h4 class="display-4 mb-4 text-center">April 2020</h4>
+                                <h4 class="text-center ">April 2020</h4>
                                 <div class="row d-none d-sm-flex p-1 bg-dark text-chartreuse">
                                 <h5 class="col-sm p-1 text-center">Sunday</h5>
                                 <h5 class="col-sm p-1 text-center">Monday</h5>
@@ -446,7 +495,7 @@
             }
         </script>
         
-        <footer>
+        <foot>
             <div class = "row">
                 <div class ="col">
                     <h3> <u>Contact us:</u> </h3>
@@ -457,11 +506,11 @@
                      <p style="font-size: 32px;"><i class="fa fa-rss-square"></i> <i class="fa fa-twitter-square"></i> <i class="fa fa-facebook-square"></i></p>
                 </div>
                 <div class = "col">
-                    <a href="">Home Page</a> &nbsp;&nbsp;&nbsp;
-                    <a href="">Competition</a> &nbsp;&nbsp;&nbsp; 
-                    <a href="">Mission Statement</a>
+                    <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html">Home Page</a> </div>
+                    <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html">Competition</a></div>
+                    <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html">Mission Statement</a></div>
                 </div>
             </div>
-        </footer>
+        </foot>
     </body>     
 </html>

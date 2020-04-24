@@ -12,29 +12,52 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Style CSS-->
         <link rel='stylesheet' type="text/css" href="detox_style.css">
-        <title> Detox Mission</title>
+        <!-- Font Link-->
+       <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+        <title> Mission Statement</title>
         <style>
-            @media screen and (max-width: 950px){
+            @media screen and (max-width: 990px){
                 .row{
                     flex-direction: column;
                 }
-            }
-            .container{
-                margin-top: 5em;
             }
         </style>
     </head>
 
     <body>
         <div class="header">
-            <h2>Detox Competition Guidelines: &nbsp;&nbsp;&nbsp;<a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html">Home Page</a> &nbsp;&nbsp;&nbsp;<a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html">Competition</a> &nbsp;&nbsp;&nbsp; <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html">Mission Statement</a></h2>
-    
-                <!-- Progressive bar in header-->
-                <div class="progress-container">
-                    <div class="progress-bar" id="myBar"></div>
-                        <nav>  <!-- 1st section --></nav>
-                  
-                </div>
+
+            <!-- Main Nav Bar-->
+            <div id ='nav1'>
+                <h1>Detox League: &nbsp;&nbsp;&nbsp;<a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html">Home</a> &nbsp;&nbsp;&nbsp;<a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html">Competition</a> &nbsp;&nbsp;&nbsp; <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html">Mission Statement</a></h1>
+            </div>
+
+            <!-- Mobile nav Bar-->
+            <div class="bs-example" id="nav2">
+                <ul class="nav nav-pills mb-5">
+                    <li class="nav-item">
+                        <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html" class="nav-link active">Detox Mission Statement</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Directory</a>
+                        <div class="dropdown-menu">
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html" class="dropdown-item">Home Page</a>
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html" class="dropdown-item">Competition Guildelines</a>
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html" class="dropdown-item">Mission Statement</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="https://jlancast6.wixsite.com/detoxleague"class="dropdown-item">Detox Company</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Progressive bar in header-->   
+            <div class="progress-container" style="height: 2px;">
+                <div class="progress-bar" id="myBar" style="height: 2px;"></div>
+                <nav></nav>
+            </div>            
+            
         </div>
 
         <div class = "container"> 
@@ -76,34 +99,32 @@
                                     <li>Playerunknown’s Battleground (PUBG)</li>
                                     <li>Street Fighters</li> 
                                     <li>Super Smash Brother Brawl: Melee, PM, 4, Ultimate</li>
-                                    <li>Rocket League</li>
-                                    
-                                    
+                                    <li>Rocket League</li>                                                                    
                                 </ul>
                             </div>
-                        </section>
-
-                        
+                        </section>                        
                     </div>
                 </section>
             </main>
         </div>
         
-        <footer>
-        <div class = "row">
-            <div class ="col">
-                <h3> <u>Contact us:</u> </h3>
-                <p>Email: jordanrlancaster@gmail.com</p>
-                <p>Phone: +1(215) 285 - 3747</p>
+        <foot>
+            <div class = "row">
+                <div class ="col">
+                    <h3> <u>Contact us:</u> </h3>
+                    <p>Email: jordanrlancaster@gmail.com</p>
+                    <p>Phone: +1(215) 285 - 3747</p>
+                </div>
+                <div class = "col">
+                    <p style="font-size: 32px;"><i class="fa fa-rss-square"></i> <i class="fa fa-twitter-square"></i> <i class="fa fa-facebook-square"></i></p>
+                </div>
+                <div class = "col">
+                    <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html">Home Page</a></div>
+                    <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html">Competition</a></div>
+                    <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html">Mission Statement</a></div>
+                </div>
             </div>
-            <div class = "col">
-                 <p style="font-size: 32px;"><i class="fa fa-rss-square"></i> <i class="fa fa-twitter-square"></i> <i class="fa fa-facebook-square"></i></p>
-            </div>
-            <div class = "col">
-                <a href="">Home Page</a> &nbsp;&nbsp;&nbsp;<a href="">Competition</a> &nbsp;&nbsp;&nbsp; <a href="">Mission Statement</a>
-            </div>
-        </div>
-    </footer>
+        </foot>
     </body>
 
     

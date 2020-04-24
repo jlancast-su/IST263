@@ -11,25 +11,16 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Style CSS-->
         <link rel='stylesheet' type="text/css" href="detox_style.css">
-        
+        <!-- Font Link-->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
         
         <title> Detox Competition </title>
         <style>
-
-            @media screen and (max-width: 1100px){
+            @media screen and (max-width: 990px){
                 .row{
                     flex-direction: column;
                 }
-            }
-            h2, h3, h4, h5{
-                color: chartreuse;
-            }
-
-            .div .li{
-                background-color: black;
-            }
-            figure{
-                background: transparent;
             }
             #img_cod{
                 background: url(Media/game_photos/CoD.jpg);
@@ -63,22 +54,20 @@
                 background-size: cover;
                 padding: 8em;
             }
-            .container{
-                margin-top: 6em;
-            }
+
         </style>
     </head>
 
     <body>
              
         <div class="header">
-            <!-- Progressive bar in header-->   
-            <div class="progress-container" style="height: 2px;">
-                <div class="progress-bar" id="myBar" style="height: 2px;"></div>
-                <nav></nav>
+            <!-- Main Nav Bar-->
+            <div id ='nav1'>
+                <h1>Detox League: &nbsp;&nbsp;&nbsp;<a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html">Home</a> &nbsp;&nbsp;&nbsp;<a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html">Competition</a> &nbsp;&nbsp;&nbsp; <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html">Mission Statement</a></h1>
             </div>
 
-            <div class="bs-example">
+            <!-- Mobile nav Bar-->
+            <div class="bs-example" id="nav2">
                 <ul class="nav nav-pills mb-5">
                     <li class="nav-item">
                         <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html" class="nav-link active">Detox Competition Guidelines</a>
@@ -95,24 +84,21 @@
                     </li>
                 </ul>
             </div>
+            
+            <!-- Progressive bar in header-->   
+            <div class="progress-container" style="height: 2px;">
+                <div class="progress-bar" id="myBar" style="height: 2px;"></div>
+                <nav></nav>
+            </div>
         </div>
 
         <div class = "container"> 
 
             <main>
-                
-
-                <!-- Guildelines per game explicitly-->
-                <!-- Each section will have 4 compenents:
-                1. image 
-                2. list of rules
-                3. video game play 
-                4. Additional requirements or guidelines-->
-                
                 <h2> Detox Competition Guildelines</h2>
                 <br>
-                
-                <section class = 'row'>     
+
+                <section class = 'row' id="divisions">     
                     <div class = 'col'> <!-- Game division-->
                         <ul>
                             <li>Youth</li>
@@ -289,7 +275,9 @@
                         <p style="font-size: 32px;"><i class="fa fa-rss-square"></i> <i class="fa fa-twitter-square"></i> <i class="fa fa-facebook-square"></i></p>
                     </div>
                     <div class = "col">
-                        <a href="">Home Page</a> &nbsp;&nbsp;&nbsp;<a href="">Competition</a> &nbsp;&nbsp;&nbsp; <a href="">Mission Statement</a>
+                        <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html">Home Page</a> </div>
+                        <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html">Competition</a></div>
+                        <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html">Mission Statement</a></div>
                     </div>
                 </div>
             </foot>
