@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- social icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap Calandar-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Style CSS-->
+        <link rel='stylesheet' type="text/css" href="detox_style.css">
+       <!-- Font Link-->
+       <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        
+        <title> Detox Home </title>
+        <style>
+/* Never go this to work....
+            This is CSS for the over color that comes from hovering over the image. Can't get it to work yet. 
+
+            .img_container {
+            position: relative;
+            width: 50%;
+            }
+            
+            .img-fluid{margin-top: 1em; margin-bottom: 1em;}
+            
+            .image {
+            display: block;
+            width: auto;
+            height: auto;
+            border: 2px solid white;
+            }
+
+            .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+            border: 2px solid purple;
+            }
+
+            #shadow:hover .overlay {
+            opacity: 1;
+            }
+
+            .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+*/
+        /* CSS for Calandar */
+        @media (min-width: 576px) {
+            .day {
+                height: 14.2857vw;
+            }
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <!-- Main Nav Bar-->
+            <div id ='nav1'>
+                <h1>Detox League: &nbsp;&nbsp;&nbsp;<a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html">Home</a> &nbsp;&nbsp;&nbsp;<a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html">Competition</a> &nbsp;&nbsp;&nbsp; <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html">Mission Statement</a></h1>
+            </div>
+
+            <!-- Mobile nav Bar-->
+            <div class="bs-example" id="nav2">
+                <ul class="nav nav-pills mb-5">
+                    <li class="nav-item">
+                        <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html" class="nav-link active">Home Page</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Directory</a>
+                        <div class="dropdown-menu">
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html" class="dropdown-item">Home Page</a>
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html" class="dropdown-item">Competition Guildelines</a>
+                            <a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html" class="dropdown-item">Mission Statement</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="https://jlancast6.wixsite.com/detoxleague"class="dropdown-item">Detox Company</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Progressive bar in header-->   
+            <div class="progress-container" style="height: 2px;">
+                <div class="progress-bar" id="myBar" style="height: 2px;"></div>
+                <nav></nav>
+            </div>
+        </div>
+
+        <main class = "container" >
+            
+
+<!-- This formate allows the containers to hover over the images with names    
+
+<div class="img_container">
+    <img src="Media/game_photos/CoD.jpg" class="img-fluid" alt="Avatar">
+    <div class="overlay">
+        <div class="text">Call of Duty</div>
+    </div>
+</div> 
+-->    
+                <section > <!-- 2nd section -->
+                    <h2> Welcome to Detox League </h2>
+                    <div class="container-fluid" >
+                                
+                        <div class="row" > 
+
+                            <!-- For some reason I cant get this to only cover the length and width of an Image.
+                            I've tried doing to only images or the speicific col for bootstrap but I feel as though something is covering it.
+                            <div id='shadow'>
+                                <div class='overlay'><div class='text'> COD 2</div></div>
+                            </div>  
+                            -->
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6" >                                              
+                                <img src="Media/game_photos/CoD.jpg" class="img-fluid" >
+                                <img src="Media/game_photos/melee_pic.jpg"  class="img-fluid" >
+                                <img src="Media/game_photos/NFL_Madden.png"  class="img-fluid">
+                                <img src="Media/game_photos/COD_ghost.jpg" class="img-fluid">
+                                <img src="Media/game_photos/SSBB-ultimate.jpg"  class="img-fluid">
+                                <img src="Media/game_photos/COD_img.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img src="Media/game_photos/PUBG.jpg" class="img-fluid">
+                                <img src="Media/game_photos/MK_logo.png" class="img-fluid">
+                                <img src="Media/game_photos/LoL.jpg"  class="img-fluid">
+                                <img src="Media/game_photos/FIFA.svg" class="img-fluid">
+                                <img src="Media/game_photos/Overwatch.svg"  class="img-fluid">
+                            </div>  
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <img src="Media/game_photos/Melee.png"  class="img-fluid">
+                                <img src="Media/game_photos/Mortal_Kombat.png"  class="img-fluid">
+                                <img src="Media/game_photos/CSGO.jpg"  class="img-fluid">
+                                <img src="Media/game_photos/2k.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- List of games in seperate divs 2x3-->
+                </section>
+                    
+                    <!-- Calander-->
+                    <div class = 'col'> 
+                        <div class="container-fluid">
+                            <header>
+                                <h4 class="text-center ">April 2020</h4>
+                                <div class="row d-none d-sm-flex p-1 bg-dark text-chartreuse">
+                                <h5 class="col-sm p-1 text-center">Sunday</h5>
+                                <h5 class="col-sm p-1 text-center">Monday</h5>
+                                <h5 class="col-sm p-1 text-center">Tuesday</h5>
+                                <h5 class="col-sm p-1 text-center">Wednesday</h5>
+                                <h5 class="col-sm p-1 text-center">Thursday</h5>
+                                <h5 class="col-sm p-1 text-center">Friday</h5>
+                                <h5 class="col-sm p-1 text-center">Saturday</h5>
+                                </div>
+                            </header>
+                            <div class="row border border-right-0 border-bottom-0">
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">29</span>
+                                    <small class="col d-sm-none text-center text-muted">Wednesday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">30</span>
+                                    <small class="col d-sm-none text-center text-muted">Monday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">31</span>
+                                    <small class="col d-sm-none text-center text-muted">Tuesday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">1</span>
+                                    <small class="col d-sm-none text-center text-muted">Wednesday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">2</span>
+                                    <small class="col d-sm-none text-center text-muted">Thursday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">3</span>
+                                    <small class="col d-sm-none text-center text-muted">Friday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white" title="Test Event 1">Team Registration</a>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">4</span>
+                                    <small class="col d-sm-none text-center text-muted">Saturday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">5</span>
+                                    <small class="col d-sm-none text-center text-muted">Sunday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No event</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">6</span>
+                                    <small class="col d-sm-none text-center text-muted">Monday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">7</span>
+                                    <small class="col d-sm-none text-center text-muted">Tuesday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">8</span>
+                                    <small class="col d-sm-none text-center text-muted">Wednesday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-success text-white" title="Test Event 2">Player Registration</a>
+                                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-danger text-white" title="Test Event 3">Compeition Calendar Published</a>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">9</span>
+                                    <small class="col d-sm-none text-center text-muted">Thursday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">10</span>
+                                    <small class="col d-sm-none text-center text-muted">Friday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">11</span>
+                                    <small class="col d-sm-none text-center text-muted">Saturday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">12</span>
+                                    <small class="col d-sm-none text-center text-muted">Sunday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">13</span>
+                                    <small class="col d-sm-none text-center text-muted">Monday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">14</span>
+                                    <small class="col d-sm-none text-center text-muted">Tuesday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">15</span>
+                                    <small class="col d-sm-none text-center text-muted">Wednesday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">16</span>
+                                    <small class="col d-sm-none text-center text-muted">Thursday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">17</span>
+                                    <small class="col d-sm-none text-center text-muted">Friday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">18</span>
+                                    <small class="col d-sm-none text-center text-muted">Saturday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">19</span>
+                                    <small class="col d-sm-none text-center text-muted">Sunday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">20</span>
+                                    <small class="col d-sm-none text-center text-muted">Monday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-primary text-white"></a>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">21</span>
+                                    <small class="col d-sm-none text-center text-muted">Tuesday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">22</span>
+                                    <small class="col d-sm-none text-center text-muted">Wednesday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">23</span>
+                                    <small class="col d-sm-none text-center text-muted">Thursday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">24</span>
+                                    <small class="col d-sm-none text-center text-muted">Friday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">25</span>
+                                    <small class="col d-sm-none text-center text-muted">Saturday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">26</span>
+                                    <small class="col d-sm-none text-center text-muted">Sunday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">27</span>
+                                    <small class="col d-sm-none text-center text-muted">Monday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">28</span>
+                                    <small class="col d-sm-none text-center text-muted">Tuesday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">29</span>
+                                    <small class="col d-sm-none text-center text-muted">Wednesday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">30</span>
+                                    <small class="col d-sm-none text-center text-muted">Thursday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">1</span>
+                                    <small class="col d-sm-none text-center text-muted">Friday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+                                <h5 class="row align-items-center">
+                                    <span class="date col-1">2</span>
+                                    <small class="col d-sm-none text-center text-muted">Saturday</small>
+                                    <span class="col-1"></span>
+                                </h5>
+                                <p class="d-sm-none">No events</p>
+                                </div>
+                                <div class="w-100"></div>
+
+                            </div>
+                        </div>
+                    </div>
+         </main> <!-- /page-container -->
+
+
+        <!-- Bootstrap Link -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        
+        <!-- the progress bar at the top of the Header-->
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            function myFunction() {
+              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
+        
+        <foot>
+            <div class = "row">
+                <div class ="col">
+                    <h3> <u>Contact us:</u> </h3>
+                    <p>Email: jordanrlancaster@gmail.com</p>
+                    <p>Phone: +1(215) 285 - 3747</p>
+                </div>
+                <div class = "col">
+                     <p style="font-size: 32px;"><i class="fa fa-rss-square"></i> <i class="fa fa-twitter-square"></i> <i class="fa fa-facebook-square"></i></p>
+                </div>
+                <div class = "col">
+                    <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/homepage.html">Home</a> </div>
+                    <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/compguidelines.html">Competition</a></div>
+                    <div class = 'row'><a href="https://jlancast-su.github.io/IST263/individual%20project/websites/orgmission.html">Mission Statement</a></div>
+                </div>
+            </div>
+        </foot>
+
+    </body>     
+</html>
